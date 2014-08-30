@@ -1,6 +1,5 @@
-function [u,psi]=calculation
-global z h len dt A B C D E delta alp
-
+function [u,psi]=calculation(alp,z,h)
+len = length(z);
 %% Exact ground state
 exact_psi=1/sqrt(2)*sqrt(alp)*exp(-alp^2*(z).^2/2)/pi^(1/4);
 
